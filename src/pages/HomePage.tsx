@@ -6,7 +6,12 @@ import Typography from '@mui/material/Typography';
 const HomePage: FunctionComponent = () => {
   return (
     <div>
-        <h1>Christopher Bachicha</h1>
+        <Typography 
+            variant="h1" 
+            component="h1"
+        >
+            Christopher Bachicha
+        </Typography>
         <Typography 
             variant="h4" 
             component="h2"

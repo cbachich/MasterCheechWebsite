@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -18,7 +18,7 @@ import AppBar from './components/AppBar';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <AppBar />
       <Container sx={{ marginY: 5 }}>
         <Routes>
@@ -28,7 +28,7 @@ const App: React.FC = () => {
           <Route path="/" element={<HomePage />} />
         </Routes>
       </Container>
-    </Router>
+    </BrowserRouter>
   );
 };
 
