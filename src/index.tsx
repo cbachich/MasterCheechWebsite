@@ -10,11 +10,10 @@ import './global.css';
 
 import Container from '@mui/material/Container';
 
-import HomePage from './components/HomePage';
-import AboutMePage from './components/AboutMePage';
-import BlogPage from './components/BlogPage';
-import ContactPage from './components/ContactPage';
-import Navigation from './components/Navigation';
+import HomePage from './pages/HomePage';
+import AboutMePage from './pages/AboutMePage';
+import BlogPage from './pages/BlogPage';
+import ContactPage from './pages/ContactPage';
 import AppBar from './components/AppBar';
 
 const App: React.FC = () => {
