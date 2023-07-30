@@ -1,10 +1,23 @@
 import React, { FunctionComponent } from 'react';
+import Typography from '@mui/material/Typography';
 
 const BlogPage: FunctionComponent = () => {
   return (
     <div>
-      <h1>Blog</h1>
-      {/* Add your content here */}
+      <Typography 
+            variant="h2" 
+            component="h1"
+        >
+            Blog
+        </Typography>
+        <Typography 
+            variant="body1" 
+            component="p"
+            marginTop={5}
+            marginBottom={3}
+        >
+          Coming Soon...
+        </Typography>
     </div>
   );
 };
