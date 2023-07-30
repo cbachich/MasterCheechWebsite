@@ -3,6 +3,19 @@ import ExperimentCard from '../components/ExperimentCard';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
+const experiments = [
+  {
+    title: 'Example Experiment',
+    description: 'This is an example experiment.',
+    route: '/example',
+  },
+  {
+    title: 'Example Experiment 2',
+    description: 'This is the second example experiment.',
+    route: '/example',
+  },
+];
+
 const HomePage: FunctionComponent = () => {
   return (
     <div>
@@ -21,10 +34,9 @@ const HomePage: FunctionComponent = () => {
             Experiment Group
         </Typography>
         <Grid container spacing={5}>
-            <ExperimentCard />
-            <ExperimentCard />
-            <ExperimentCard />
-            <ExperimentCard />
+          {experiments.map((experiment) => (
+            <ExperimentCard experiment={experiment} />
+          ))}
         </Grid>
     </div>
   );

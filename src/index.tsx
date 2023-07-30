@@ -15,6 +15,7 @@ import AboutMePage from './pages/AboutMePage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 import AppBar from './components/AppBar';
+import ExampleExperiment from './pages/experiments/ExampleExperiment';
 
 const App: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const App: React.FC = () => {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/about" element={<AboutMePage />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/example" element={<ExampleExperiment />} />
         </Routes>
       </Container>
     </BrowserRouter>
