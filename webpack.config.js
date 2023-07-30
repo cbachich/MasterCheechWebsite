@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   entry: './src/index.tsx',
   module: {
     rules: [
@@ -31,12 +32,13 @@ module.exports = {
   },
   devServer: {
     devMiddleware: {
-      publicPath: '/dist/',
-    },
-    static: {
-      directory: path.join(__dirname, 'dist'),
-    },
-    compress: true,
-    port: 9000,
+        publicPath: '/',
+      },
+      static: {
+        directory: path.join(__dirname, 'dist'),
+      },
+      compress: true,
+      port: 9000,
+      liveReload: true,
   },
 };
